@@ -16,7 +16,7 @@ with open('sec.txt') as file:       #считываем из файла заши
 freq_dict = {}                     #словарь для значений частотного анализа. значения взяты из Вики
 current_dict = {}                  #словарь для значений частотного анализа текущего текста
 
-with open('frequency analysis.txt') as file:   #считываем значения частотного анализа из файла, где key - символ, value - вероятность встречаемости 
+with open('frequency analysis.txt') as file:   #считываем значения частотного анализа из файла, где key - буква, value - вероятность встречаемости 
     for items in file:
         key, value = items.split()
         freq_dict[key] = value
