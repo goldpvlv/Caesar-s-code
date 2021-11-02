@@ -36,7 +36,7 @@ slides = []                                                    #список д�
 curr_ind = 1
 freq_ind = 1
 
-for key in current_dict:                                       #находим наиболее вероятные ключи для заданного шифра
+for key in current_dict:                                       #находим вероятные ключи для заданного шифра
 
     for k in freq_dict:
         if (float(current_dict.get(key)) >= (float(freq_dict.get(k)) - deff)) and (float(current_dict.get(key)) <= (float(freq_dict.get(k)) + deff)):
@@ -53,7 +53,7 @@ slide = 0
 repeat_slides = []                                           #список для ключей шифра, которые с большей вероятностью могут быть заданы
 repeat_ind = 0
 
-for i in range(1, len(slides)):                              #находим вероятные ключи шифра
+for i in range(1, len(slides)):                              #находим наиболее вероятные ключи шифра
     if slides[i-1] == slides[i]:
         cnt += 1
     else:
