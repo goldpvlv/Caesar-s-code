@@ -32,7 +32,7 @@ for key in current_dict:                                       #рассчиты
     current_dict[key] = (current_dict[key] / sumbCnt) * 100
 
 deff = 0.25                                                    #допустимая погрешность
-slides = []                                                    #список для вероятных значений шага в шифре
+slides = []                                                    #список для вероятных значений ключа шифра
 curr_ind = 1
 freq_ind = 1
 
